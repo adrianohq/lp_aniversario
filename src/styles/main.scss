@@ -24,6 +24,11 @@
     background-size: cover;
     z-index: -1;
 
+    @media (max-width: 640px) {
+        background-image: url(../images/hero_mobile.jpg);
+        background-position: center;
+    }
+
     &::after {
         content: "";
         position: absolute;
