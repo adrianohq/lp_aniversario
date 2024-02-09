@@ -1,0 +1,82 @@
+@use 'variaveis';
+@use 'hero';
+@use 'event';
+@use 'ask';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: variaveis.$textColor;
+    font-family: Orbitron, sans-serif;
+}
+
+.gif_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../images/hero.gif);
+    background-size: cover;
+    z-index: -1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-overlay-color, rgba(7, 0, 44, 0));
+        transition: background-color 1s ease;
+    }
+}
+
+.title {
+    font-size: 128px;
+    font-family: Monofett, sans-serif;
+}
+
+.title--big {
+    font-family: Monofett, sans-serif;
+    font-size: 192px;
+}
+
+.title--small {
+    font-family: Monofett, sans-serif;
+    font-size: 64px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 96px;
+    }
+
+    .title--big {
+        font-size: 144px;
+    }
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .title--big {
+        font-size: 77px;
+    }
+
+    .title--small {
+        font-size: 40px;
+    }
+}
+}

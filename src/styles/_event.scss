@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.event {
+    text-align: center;
+    box-sizing: content-box;
+    padding-top: 80px;
+    padding-bottom: 240px;
+
+    &__item {
+        padding: 64px;
+
+        &__title {
+            font-size: 24px;
+            padding: 64px 0;
+        }
+
+        &__description {
+            &:last-child {
+                padding-bottom: 80px;
+            }
+        }
+    }
+
+    &__button {
+        padding: 16px 80px;
+        color: variaveis.$textColor;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid variaveis.$textColor;
+        border-radius: 16px;
+    }
+
+    @media (max-width: 640px) {
+        padding-top: 20px;
+
+        &__button {
+            padding: 16px 40px;
+        }
+    }
+}

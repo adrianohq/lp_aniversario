@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monofett&family=Orbitron:wght@400;700&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.scss">
+</head>
+
+<body>
+    <div class="gif_container"></div>
+    <header class="hero">
+        <div class="container">
+            <div class="hero__title">
+                <h1 class="title">29 ANOS</h1>
+                <h2 class="title--big">ADRIANO</h2>
+            </div>
+            <div class="hero__box">
+                <p class="hero__box__text">
+                    Você está a:
+                </p>
+                <span class="hero__box__counter" id="counter"></span>
+                <p class="hero__box__text">
+                    da melhor festa do ano!
+                </p>
+            </div>
+            <a href="#event" class="hero__button">ver mais</a>
+        </div>
+    </header>
+
+    <section class="event" id="event">
+        <div class="container">
+            <div class="event__item">
+                <h2 class="event__item__title title--small">Quando?</h2>
+                <p class="event__item__description">
+                    31 de Dezembro de 2024, 19:00h
+                </p>
+                <h2 class="event__item__title title--small">Onde?</h2>
+                <p class="event__item__description">
+                    QMS 06, Rua 17, Lote 16 - Sobradinho/DF
+                </p>
+            </div>
+            <a href="#" class="event__button">Confirmar presença</a>
+        </div>
+    </section>
+
+    <section class="ask" id="ask">
+        <div class="container">
+            <div class="ask__box">
+                <h2 class="ask__box__title title--small">Dúvidas?</h2>
+                <p class="ask__box__subtitle">Entre em contato. Tel: (XX) 12345-6789</p>
+                <form class="ask__box__form">
+                    <div class="ask__box__form__item">
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                    </div>
+                    <div class="ask__box__form__item">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="ask__box__form__item">
+                        <textarea id="message" name="message" placeholder="Digite sua mensagem aqui"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_text">
+                2024 - dev by adriano_hq
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

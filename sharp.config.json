@@ -1,0 +1,13 @@
+{
+    "gif": {
+        "quality": 75
+    },
+    
+    "png": {
+        "quality": 75
+    },
+
+    "jpeg": {
+        "quality": 75
+    }
+}
